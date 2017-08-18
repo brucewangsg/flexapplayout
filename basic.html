@@ -1,0 +1,61 @@
+<!--
+	Usage:
+	<v>
+		... all children that is v or w or h or .flex-v or .flex-h or .flex-w will be stretched to fill all space vertically
+	</v>
+
+
+	<h>
+		... all children that is v or w or h or .flex-v or .flex-h or .flex-w will be stretched to fill all space horizontally
+	</h>
+	
+	<v wd="320">, <h wd="320">, <w wd="320"> 
+	  modifier for the fix width
+
+	<v hg="100"> , <h hg="100">, <w hg="100">
+	  modifier for the fix height
+
+	<v wd="0">, <h wd="0">, <w wd="0"> 
+	  modifier for the fix width on mobile screen
+
+	<v hg="0"> , <h hg="0">, <w hg="0">
+	  modifier for the fix height on mobile screen
+
+-->
+		
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1, user-scalable = no, minimum-scale = 1, maximum-scale = 1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<title>Flex Layout</title>
+	<script src="javascripts/flex.init.js"></script>
+	<script src="javascripts/flex.js"></script>
+	<link rel="stylesheet" href="stylesheets/flex.css" type="text/css" media="screen"/>
+	<style>
+		.bg-b1 { background-color : #17283a }
+		.bg-b2 { background-color : #1c75e6 }
+		.bg-w0 { background-color : #DDD }
+		.bg-g1 { background-color : #555 }
+		.bg-g2 { background-color : #888 }
+	</style>
+	<script>filler=function(){for(var i = 0; i < 1000; i++){document.write((Math.random()+' ').replace('0.', '').replace(/([0-9])/g, '$1 '))}}</script>	
+</head>
+<body>
+	<h class="sidebar">
+		<v class='bg-b2' wd="320" mwd="0">
+			<w hg="44" mhg="0" class='bg-b1'></w>
+			<w></w>
+		</v>
+		<v>
+			<h class='bg-w0'>
+				<w class='bg-g2' style='overflow : scroll'><script>filler()</script></w>
+				<w></w>			
+			</h>
+			<w class='bg-g1' style='overflow : scroll'><script>filler()</script></w>
+		</v>
+	</h>
+</body>
+</html>

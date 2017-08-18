@@ -1,0 +1,181 @@
+body, html { 
+	width : 100%; 
+	height : 100%; 
+	margin : 0px; 
+	padding : 0px; 
+}
+h, .flex-h {
+	flex-direction : row;
+}
+v, .flex-v {
+	flex-direction : column;
+}
+v, h, .flex-h, .flex-v {
+	display : flex;
+}
+h, v, w, .flex-h, .flex-v, .flex-w {
+	position : relative;
+}
+v, h, .flex-h, .flex-v { 
+	align-items : stretch;
+	align-content : absolute;
+}
+
+v > h,
+v > v,
+v > w,
+v > .flex-h,
+v > .flex-v,
+v > .flex-w,
+h > h,
+h > v,
+h > w,
+h > .flex-h,
+h > .flex-v,
+h > .flex-w,
+.flex-v > h,
+.flex-v > v,
+.flex-v > w,
+.flex-v > .flex-h,
+.flex-v > .flex-v,
+.flex-v > .flex-w,
+.flex-h > h,
+.flex-h > v,
+.flex-h > w,
+.flex-h > .flex-h,
+.flex-h > .flex-v,
+.flex-h > .flex-w {
+	flex-grow : 1;
+	flex-shrink : 1;
+	flex-basis : 0;
+}
+
+v[wd], h[wd], w[wd],
+v > h[wd],
+v > v[wd],
+v > w[wd],
+v > .flex-h[wd],
+v > .flex-v[wd],
+v > .flex-w[wd],
+h > h[wd],
+h > v[wd],
+h > w[wd],
+h > .flex-h[wd],
+h > .flex-v[wd],
+h > .flex-w[wd],
+.flex-v[wd], .flex-h[wd], .flex-w[wd],
+.flex-v > h[wd],
+.flex-v > v[wd],
+.flex-v > w[wd],
+.flex-v > .flex-h[wd],
+.flex-v > .flex-v[wd],
+.flex-v > .flex-w[wd],
+.flex-h > h[wd],
+.flex-h > v[wd],
+.flex-h > w[wd],
+.flex-h > .flex-h[wd],
+.flex-h > .flex-v[wd],
+.flex-h > .flex-w[wd] {
+	flex-grow : 0;
+	flex-shrink : 0;	
+}
+
+v[mwd], h[mwd], w[mwd],
+v > h[mwd],
+v > v[mwd],
+v > w[mwd],
+v > .flex-h[mwd],
+v > .flex-v[mwd],
+v > .flex-w[mwd],
+h > h[mwd],
+h > v[mwd],
+h > w[mwd],
+h > .flex-h[mwd],
+h > .flex-v[mwd],
+h > .flex-w[mwd],
+.flex-v[mwd], .flex-h[mwd], .flex-w[mwd],
+.flex-v > h[mwd],
+.flex-v > v[mwd],
+.flex-v > w[mwd],
+.flex-v > .flex-h[mwd],
+.flex-v > .flex-v[mwd],
+.flex-v > .flex-w[mwd],
+.flex-h > h[mwd],
+.flex-h > v[mwd],
+.flex-h > w[mwd],
+.flex-h > .flex-h[mwd],
+.flex-h > .flex-v[mwd],
+.flex-h > .flex-w[mwd] {
+	flex-grow : 0;
+	flex-shrink : 0;	
+}
+
+v[hg], h[hg], w[hg],
+v > h[hg],
+v > v[hg],
+v > w[hg],
+v > .flex-h[hg],
+v > .flex-v[hg],
+v > .flex-w[hg],
+h > h[hg],
+h > v[hg],
+h > w[hg],
+h > .flex-h[hg],
+h > .flex-v[hg],
+h > .flex-w[hg],
+.flex-v[hg], .flex-h[hg], .flex-w[hg],
+.flex-v > h[hg],
+.flex-v > v[hg],
+.flex-v > w[hg],
+.flex-v > .flex-h[hg],
+.flex-v > .flex-v[hg],
+.flex-v > .flex-w[hg],
+.flex-h > h[hg],
+.flex-h > v[hg],
+.flex-h > w[hg],
+.flex-h > .flex-h[hg],
+.flex-h > .flex-v[hg],
+.flex-h > .flex-w[hg] {
+	flex-grow : 0;
+	flex-shrink : 0;	
+}
+
+v[mhg], h[mhg], w[mhg],
+v > h[mhg],
+v > v[mhg],
+v > w[mhg],
+v > .flex-h[mhg],
+v > .flex-v[mhg],
+v > .flex-w[mhg],
+h > h[mhg],
+h > v[mhg],
+h > w[mhg],
+h > .flex-h[mhg],
+h > .flex-v[mhg],
+h > .flex-w[mhg],
+.flex-v[mhg], .flex-h[mhg], .flex-w[mhg],
+.flex-v > h[mhg],
+.flex-v > v[mhg],
+.flex-v > w[mhg],
+.flex-v > .flex-h[mhg],
+.flex-v > .flex-v[mhg],
+.flex-v > .flex-w[mhg],
+.flex-h > h[mhg],
+.flex-h > v[mhg],
+.flex-h > w[mhg],
+.flex-h > .flex-h[mhg],
+.flex-h > .flex-v[mhg],
+.flex-h > .flex-w[mhg] {
+	flex-grow : 0;
+	flex-shrink : 0;	
+}
+
+body > v,
+body > h,
+body > w,
+body > .flex-v,
+body > .flex-h,
+body > .flex-w {
+	width : 100%; 
+	height : 100%; 
+}		

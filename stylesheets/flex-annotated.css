@@ -1,0 +1,85 @@
+body.flex-annotated h::after,
+body.flex-annotated v::after,
+body.flex-annotated w::after {
+	position : absolute;
+	top : 20px;
+	left : 20px;
+	width : calc(100% - 40px);
+	height : calc(100% - 40px);
+	background-color : rgba(0,0,0,0.2);
+	display : block;
+	content : '';	
+}
+
+body.flex-annotated h::before,
+body.flex-annotated v::before,
+body.flex-annotated w::before {
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	margin-left : -15px;
+	margin-top : -15px;
+	display : block;
+	color : #FFF;
+	font-size : 15px;
+	width : 30px;
+	height : 30px;
+	line-height : 30px;
+	text-align : center;
+	background : rgba(0,0,0,0.6);
+	-webkit-border-radius : 5px;	
+	-moz-border-radius : 5px;	
+	border-radius : 5px;	
+	font-family : Arial;
+}
+
+body.flex-annotated w::before {
+	content : "W";
+}
+
+body.flex-annotated h::before {
+	content : "H";
+}
+
+body.flex-annotated v::before {
+	content : "V";
+}
+
+body.flex-annotated h.has-child::after {
+	top : 10px;
+	left : 10px;
+	width : calc(100% - 20px);
+	height : 2px;
+	background-color : #167efb;	
+}
+
+body.flex-annotated v.has-child::after {
+	top : 15px;
+	left : 10px;
+	height : calc(100% - 30px);
+	width : 2px;
+	background-color : #167efb;	
+}
+
+body.flex-annotated w.has-child::after {
+	display : none;
+}
+
+body.flex-annotated h.has-child::before,
+body.flex-annotated v.has-child::before {
+	margin-left : 0px;
+	margin-top : 0px;
+	z-index : 1000;
+	background-color : #167efb;
+}
+
+body.flex-annotated h.has-child::before {
+	top : 20px;
+	left : 10px;	
+}
+
+body.flex-annotated v.has-child::before {
+	top : 50%;
+	margin-top : -15px;
+	left : 20px;	
+}

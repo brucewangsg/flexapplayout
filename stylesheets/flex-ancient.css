@@ -1,0 +1,38 @@
+body, html { 
+	width : 100%; 
+	height : 100%; 
+	margin : 0px; 
+	padding : 0px; 
+}
+.flex-h {
+	flex-direction : row;
+}
+.flex-v {
+	flex-direction : column;
+}
+.flex-h, .flex-v {
+	display : flex;
+}
+.flex-h, .flex-v, .flex-w {
+	position : relative;
+}
+.flex-h, .flex-v { 
+	align-items : stretch;
+	align-content : absolute;
+}
+.flex-v > .flex-h,
+.flex-v > .flex-v,
+.flex-v > .flex-w,
+.flex-h > .flex-h,
+.flex-h > .flex-v,
+.flex-h > .flex-w {
+	flex-grow : 1;
+	flex-shrink : 1;
+	flex-basis : 0;
+}
+body > .flex-v,
+body > .flex-h,
+body > .flex-w {
+	width : 100%; 
+	height : 100%; 
+}		
