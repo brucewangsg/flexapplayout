@@ -116,14 +116,14 @@ You can checkout [`basic.html`](https://brucewangsg.github.io/flexapplayout/basi
 
 Checkout a few examples on this project.
 
-- [`basic.html`](https://brucewangsg.github.io/flexapplayout/basic.html) a real simple one to get the idea across.
-- [`twocolumns.html`](https://brucewangsg.github.io/flexapplayout/twocolumns.html) as implied. ([not annotated](https://brucewangsg.github.io/flexapplayout/twocolumns.html?annotation=0))
-- [`threecolumns.html`](https://brucewangsg.github.io/flexapplayout/threecolumns.html) as implied. ([not annotated](https://brucewangsg.github.io/flexapplayout/threecolumns.html?annotation=0))
-- [`vertical.html`](https://brucewangsg.github.io/flexapplayout/vertical.html) simple vertically arranged stack. ([not annotated](https://brucewangsg.github.io/flexapplayout/vertical.html?annotation=0))
-- [`horizontal.html`](https://brucewangsg.github.io/flexapplayout/horizontal.html) wait, isn't this the same as twocolumns example. ([not annotated](https://brucewangsg.github.io/flexapplayout/horizontal.html?annotation=0))
-- [`horizontalonesidefixed.html`](https://brucewangsg.github.io/flexapplayout/horizontalonesidefixed.html) with sidebar of fixed width. ([not annotated](https://brucewangsg.github.io/flexapplayout/horizontalonesidefixed.html?annotation=0))
-- [`grid.html`](https://brucewangsg.github.io/flexapplayout/grid.html) we have a sidebar here and 4 quadrants.
-- [`nested.html`](https://brucewangsg.github.io/flexapplayout/nested.html) you can go wild sometimes.
+- [`basic.html`](https://brucewangsg.github.io/flexapplayout/basic.html) a real simple one to get the idea across. ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/basic.html))
+- [`twocolumns.html`](https://brucewangsg.github.io/flexapplayout/twocolumns.html) as implied. ([not annotated](https://brucewangsg.github.io/flexapplayout/twocolumns.html?annotation=0)) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/twocolumns.html))
+- [`threecolumns.html`](https://brucewangsg.github.io/flexapplayout/threecolumns.html) as implied. ([not annotated](https://brucewangsg.github.io/flexapplayout/threecolumns.html?annotation=0)) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/threecolumns.html))
+- [`vertical.html`](https://brucewangsg.github.io/flexapplayout/vertical.html) simple vertically arranged stack. ([not annotated](https://brucewangsg.github.io/flexapplayout/vertical.html?annotation=0)) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/vertical.html))
+- [`horizontal.html`](https://brucewangsg.github.io/flexapplayout/horizontal.html) wait, isn't this the same as twocolumns example. ([not annotated](https://brucewangsg.github.io/flexapplayout/horizontal.html?annotation=0)) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/horizontal.html))
+- [`horizontalonesidefixed.html`](https://brucewangsg.github.io/flexapplayout/horizontalonesidefixed.html) with sidebar of fixed width. ([not annotated](https://brucewangsg.github.io/flexapplayout/horizontalonesidefixed.html?annotation=0)) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/horizontalonesidefixed.html))
+- [`grid.html`](https://brucewangsg.github.io/flexapplayout/grid.html) we have a sidebar here and 4 quadrants. ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/grid.html))
+- [`nested.html`](https://brucewangsg.github.io/flexapplayout/nested.html) you can go wild sometimes. ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/nested.html))
 
 
 # Bonus
@@ -132,25 +132,26 @@ Checkout a few examples on this project.
 
 You don't feel like including additional flex.js file. Alrighty, but you have to do your own hardwork defining your fixed width/height childNodes. 
 
-Checkout [`nojs.html`](https://brucewangsg.github.io/flexapplayout/nojs.html)
+Checkout [`nojs.html`](https://brucewangsg.github.io/flexapplayout/nojs.html) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/nojs.html))
 
 ## No Custom Tags
 
 You can replace `v` with `<div class='flex-v'></div>`, `h` with `<div class='flex-h'></div>`, and `w` with `<div class='flex-w'></div>`.
 
-Checkout [`nojsandtag.html`](https://brucewangsg.github.io/flexapplayout/nojsandtag.html)
+Checkout [`nojsandtag.html`](https://brucewangsg.github.io/flexapplayout/nojsandtag.html) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/nojsandtag.html))
+
 
 ## No Custom Attributes
 
 One more to go, similarly to No JS scenario, you might not like generic nameless width/height attribute mutators. Go creative with your own css selector naming. On for that you can simply use more concise `flex-ancient.css` file instead of more lines of codes `flex.css` file.
 
-Checkout [`nojsandtagandattribute.html`](https://brucewangsg.github.io/flexapplayout/nojsandtagandattribute.html)
+Checkout [`nojsandtagandattribute.html`](https://brucewangsg.github.io/flexapplayout/nojsandtagandattribute.html) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/nojsandtagandattribute.html))
 
 ## Vue
 
 Make it Vue compatible:
 
-Checkout [`vue.html`](https://brucewangsg.github.io/flexapplayout/vue.html)
+Checkout [`vue.html`](https://brucewangsg.github.io/flexapplayout/vue.html) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/vue.html))
 
 # Final Notes
 
@@ -160,4 +161,4 @@ We have been using this layout structure on [WireframeApp.io](https://wireframea
 
 This project falls under Open Course License. You can fork it and Open Source as your own, but remember to Open Course it.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. THE AUTHORS WISH THAT YOU HAVE FUN LEARNING ABOUT THIS PROJECT AND ENCOURAGE YOURSELF UNDERSTAND THE UNDERLYING CONCEPT BEHIND IT. WHEN THE TIME COME, YOU MIGHT BE ABLE TO EXPLAIN THE SAME CONCEPT TO OTHERS.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. THE AUTHORS WISH THAT YOU HAVE FUN LEARNING ABOUT THIS PROJECT AND ENCOURAGE YOURSELF TO UNDERSTAND THE UNDERLYING CONCEPT BEHIND IT. WHEN THE TIME COME, YOU MIGHT BE ABLE TO EXPLAIN THE SAME CONCEPT TO OTHERS.
