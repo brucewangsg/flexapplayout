@@ -1,15 +1,15 @@
 # Background
 
-Gone are the days we use table to define a simple grid layout for our webpages. Latest CSS specifications are getting more refined to the point that it is now possible to define a complex layout with a simple markup structure. Back in the days when a minimalist markup structure for a 3-column layout was really hard to achieve whenever padding was introduced or a background was required to stretch to the height across those columns. Subsequently `-webkit-box-sizing` css attribute was introduced, that took padding complexity out of the equation by turning back the clock, remodel the old box model metaphor into IE6-like box model. 
+Gone are the days we used to use HTML tables to define a simple grid layout for our webpages. Latest CSS specifications are getting more refined to the point that it is now possible to define a complex layout with a simple markup structure. Back in the days when a minimalist markup structure for a 3-column layout was really hard to achieve whenever padding was introduced or a background was required to stretch to the height across those columns. Subsequently `-webkit-box-sizing` css attribute was introduced, that took away the padding complexity out of the equation by turning back the clock, which essentially remodeled the old box layout metaphor into the IE6-like box model. 
 
-For this simple experiment, I want to put `display : flex` css attribute to good use. I want a simple markup structure that can easily define my app layout in a minimalistic way, crystal clear and straight forward. Cut me some slack hunting for those width/height defined somewhere deep inside our commonly shared global css.
+For this simple experiment, I want to put `display : flex` css attribute to good use. I wanted a simple markup structure that could easily define my app layout in a minimalistic, crystal clear and straightforward way. The simplicity will cut down some slack hunting for those width/height units defined somewhere deep inside our commonly shared global css.
 
 Well, something like:
 
 ```
 <h>
-	<w style='background:#eee'></w>
-	<w></w>
+  <w style='background:#eee'></w>
+  <w></w>
 </h>
 
 ```
@@ -29,15 +29,15 @@ I'm introducing 3 custom html tags: `v`, `h`, and `w`. Those are the shortest ta
 
 - `h` is a wrapper where all childNodes inside it will fill up the space in the `row` direction (`flex-direction : row`). This is pretty similar when you have `float : left` divs. The next `div` will fill the space on the right of the previous div. The sum of widths for all the childNodes will be equal to the width of this wrapper. 
 
-- `w` will be just plain vanilla wrapper that goes along with `v`, `h` parentNode. This wrapper won't modify how its childNodes should be laid out. They will simply fallback to their default browser flow layout depending on what childNodes are inside it (e.g. display: block div, or display: inline-block tabs etc).
+- `w` will be just a plain vanilla wrapper that goes along with `v`, `h` parentNode. This wrapper won't modify how its childNodes should be laid out. They will simply fallback to their default browser flow layout depending on what childNodes are inside it (e.g. display: block div, or display: inline-block tabs etc).
 
 
 Break into two columns:
 
 ```
 <h>
-	<w style='background:#eee'></w>
-	<w></w>
+  <w style='background:#eee'></w>
+  <w></w>
 </h>
 
 ```
@@ -46,8 +46,8 @@ Break into two rows:
 
 ```
 <v>
-	<w style='background:#eee'></w>
-	<w></w>
+  <w style='background:#eee'></w>
+  <w></w>
 </v>
 
 ```
@@ -60,8 +60,8 @@ In such a case, you can do as follow:
 
 ```
 <h>
-	<w class='cc-sidebar' wd='320' style='background:#eee'></w>
-	<w></w>
+  <w class='cc-sidebar' wd='320' style='background:#eee'></w>
+  <w></w>
 </h>
 
 ```
@@ -73,14 +73,14 @@ Introducing `wd`, `hg`, `mwd`, `mhg` attributes.
 - `mwd` is width that only applies when your display is in mobile screen format i.e. screenWidth <= 600.
 - `mhg` is height that only applies when your display is in mobile screen format i.e. screenWidth <= 600.
 
-Note on mobile screen. For some scenarios, you might want your 2-column layout to turn into a single column layout by hiding the sidebar. 
+For some mobile screen scenarios, you might want your 2-column layout to turn into a single column layout by hiding the sidebar. 
 
 You can do this:
 
 ```
 <h>
-	<w class='cc-sidebar' wd='320' mwd='0' style='background:#eee'></w>
-	<w></w>
+  <w class='cc-sidebar' wd='320' mwd='0' style='background:#eee'></w>
+  <w></w>
 </h>
 
 ```
@@ -94,7 +94,7 @@ You start with a wrapper of `v` or `h`. This wrapper has its intrinsic width and
 
 ```
 <body>
-	<v></v> <!-- width and height fill the entire browser viewport -->
+  <v></v> <!-- width and height fill the entire browser viewport -->
 </body>
 ```
 
@@ -104,13 +104,13 @@ Then you will add childNodes inside this wrapper. In this case of `v` layout, ch
 
 You can checkout [`basic.html`](https://brucewangsg.github.io/flexapplayout/basic.html) as an example. All you need to do is to include:
 
-- flex.css
+- [flex.css](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/stylesheets/flex.css)
 	This CSS file is absolutely needed.  
 	
-- flex.init.js
-	This is for custom tags enabler on older browser with some quirky behavior.
+- [flex.init.js](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/javascripts/flex.init.js)
+	This is for custom tags enabler on older browsers with quirky behaviors.
 	
-- flex.js
+- [flex.js](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/javascripts/flex.js)
 	If only CSS spec is getting a little more advanced that allows us to specify something like `width : calc(attr(wd))`, this js file will not be needed at all.
 
 
@@ -133,7 +133,7 @@ Checkout a few examples on this project.
 
 ## No JS
 
-You don't feel like including additional flex.js file. Alrighty, but you have to do your own hardwork defining your fixed width/height childNodes. 
+You might not feel like including additional [`flex.js`](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/javascripts/flex.js) file. Alrighty, but you would have to do your own hardwork by defining your fixed width/height childNodes. 
 
 Checkout [`nojs.html`](https://brucewangsg.github.io/flexapplayout/nojs.html) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/nojs.html))
 
@@ -146,7 +146,7 @@ Checkout [`nojsandtag.html`](https://brucewangsg.github.io/flexapplayout/nojsand
 
 ## No Custom Attributes
 
-One more to go, similarly to the No JS scenario, you might not like generic nameless width/height attribute mutators. Go creative with your own css selector naming. For that you can simply use more concise `flex-ancient.css` file instead of more lines of codes `flex.css` file.
+One more to go, similarly to the No JS scenario, you might not like generic nameless width/height attribute mutators. Go creative with your own css selector naming. For that you can simply use the more concised [`flex-ancient.css`](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/stylesheets/flex-ancient.css) file instead of the [`flex.css`](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/stylesheets/flex.css) file which has more lines of codes.
 
 Checkout [`nojsandtagandattribute.html`](https://brucewangsg.github.io/flexapplayout/nojsandtagandattribute.html) ([Source](https://raw.githubusercontent.com/brucewangsg/flexapplayout/master/nojsandtagandattribute.html))
 
@@ -164,4 +164,4 @@ We have been using this layout structure on [WireframeApp.io](https://wireframea
 
 This project falls under Open Course License. You can fork it and Open Source as your own, but remember to Open Course it.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. THE AUTHORS WISH THAT YOU HAVE FUN LEARNING ABOUT THIS PROJECT AND ENCOURAGE YOURSELF TO UNDERSTAND THE UNDERLYING CONCEPTS BEHIND IT. WHEN THE TIME COMES, YOU MIGHT BE ABLE TO EXPLAIN THE SAME CONCEPTS TO OTHERS.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. THE AUTHORS WISH THAT YOU HAVE FUN LEARNING ABOUT THIS PROJECT AND THAT YOU WOULD ENCOURAGE YOURSELF TO UNDERSTAND THE UNDERLYING CONCEPT BEHIND IT. WHEN THE TIME COMES, YOU MIGHT BE ABLE TO EXPLAIN THE SAME CONCEPT TO OTHERS.
