@@ -16,7 +16,7 @@ Well, something like:
 
 Will get me:
 
-[![Two Columns](https://cdn.rawgit.com/brucewangsg/flexappmodel/images/twocolumns-no-annotation.png)]
+![Two Columns](https://brucewangsg.github.io/flexapplayout/images/twocolumns-no-annotation.png)
 
 
 # Usage
@@ -100,7 +100,7 @@ Then you will add childNodes inside this wrapper. In this case of `v` layout, ch
 
 ## How to Use
 
-You can checkout [`basic.html`](basic.html) example. All you need to do is to include:
+You can checkout [`basic.html`](https://brucewangsg.github.io/flexapplayout/basic.html) example. All you need to do is to include:
 
 - flex.css
 	This CSS file is absolutely needed.  
@@ -116,14 +116,14 @@ You can checkout [`basic.html`](basic.html) example. All you need to do is to in
 
 Checkout a few examples on this project.
 
-- [`basic.html`]() a real simple one to get the idea across.
-- [`twocolumns.html`](twocolumns.html) as implied. ([not annotated](twocolumns.html?annotation=0))
-- [`threecolumns.html`](threecolumns.html) as implied. ([not annotated](threecolumns.html?annotation=0))
-- [`vertical.html`](vertical.html) simple vertically arranged stack. ([not annotated](vertical.html?annotation=0))
-- [`horizontal.html`](horizontal.html) wait, isn't this the same as twocolumns example. ([not annotated](horizontal.html?annotation=0))
-- [`horizontalonesidefixed.html`](horizontalonesidefixed.html) with sidebar of fixed width. ([not annotated](horizontalonesidefixed.html?annotation=0))
-- [`grid.html`]() we have a sidebar here and 4 quadrants.
-- [`nested.html`]() you can go wild sometimes.
+- [`basic.html`](https://brucewangsg.github.io/flexapplayout/basic.html) a real simple one to get the idea across.
+- [`twocolumns.html`](https://brucewangsg.github.io/flexapplayout/twocolumns.html) as implied. ([not annotated](https://brucewangsg.github.io/flexapplayout/twocolumns.html?annotation=0))
+- [`threecolumns.html`](https://brucewangsg.github.io/flexapplayout/threecolumns.html) as implied. ([not annotated](https://brucewangsg.github.io/flexapplayout/threecolumns.html?annotation=0))
+- [`vertical.html`](https://brucewangsg.github.io/flexapplayout/vertical.html) simple vertically arranged stack. ([not annotated](https://brucewangsg.github.io/flexapplayout/vertical.html?annotation=0))
+- [`horizontal.html`](https://brucewangsg.github.io/flexapplayout/horizontal.html) wait, isn't this the same as twocolumns example. ([not annotated](https://brucewangsg.github.io/flexapplayout/horizontal.html?annotation=0))
+- [`horizontalonesidefixed.html`](https://brucewangsg.github.io/flexapplayout/horizontalonesidefixed.html) with sidebar of fixed width. ([not annotated](https://brucewangsg.github.io/flexapplayout/horizontalonesidefixed.html?annotation=0))
+- [`grid.html`](https://brucewangsg.github.io/flexapplayout/grid.html) we have a sidebar here and 4 quadrants.
+- [`nested.html`](https://brucewangsg.github.io/flexapplayout/nested.html) you can go wild sometimes.
 
 
 # Bonus
@@ -132,25 +132,25 @@ Checkout a few examples on this project.
 
 You don't feel like including additional flex.js file. Alrighty, but you have to do your own hardwork defining your fixed width/height childNodes. 
 
-Checkout [`nojs.html`](nojs.html)
+Checkout [`nojs.html`](https://brucewangsg.github.io/flexapplayout/nojs.html)
 
 ## No Custom Tags
 
-You can replace `v` with <div class='flex-v'></div>, `h` with <div class='flex-h'></div>, and `w` with <div class='flex-w'></div>.
+You can replace `v` with `<div class='flex-v'></div>`, `h` with `<div class='flex-h'></div>`, and `w` with `<div class='flex-w'></div>`.
 
-Checkout [`nojsandtag.html`](nojsandtag.html)
+Checkout [`nojsandtag.html`](https://brucewangsg.github.io/flexapplayout/nojsandtag.html)
 
 ## No Custom Attributes
 
 One more to go, similarly to No JS scenario, you might not like generic nameless width/height attribute mutators. Go creative with your own css selector naming. On for that you can simply use more concise `flex-ancient.css` file instead of more lines of codes `flex.css` file.
 
-Checkout [`nojsandtagandattribute.html`](nojsandtagandattribute.html)
+Checkout [`nojsandtagandattribute.html`](https://brucewangsg.github.io/flexapplayout/nojsandtagandattribute.html)
 
 ## Vue
 
 Make it Vue compatible:
 
-Checkout [`vue.html`](vue.html)
+Checkout [`vue.html`](https://brucewangsg.github.io/flexapplayout/vue.html)
 
 # Final Notes
 
